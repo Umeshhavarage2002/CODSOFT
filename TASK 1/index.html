@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1>Portfolio.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,I'm Umesh Shivraj Havarage </h1>
+                <p>Frontend Developer</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container1">
+            <div class="content">
+                <h1 class="subtitle">About Me</h1>
+                <p class="para">Hi I'm Umesh Shivraj Havarage, I am from Nanded.
+
+                    Currently pursuing by B.TECH Final Year,
+                    From Shri Guru Gobind Singhji Institute of Engineering and Technology.<br> In Electronics and Telecommunication.<br>
+                    I have learned Technologies like C++,Python,HTML,CSS,Javascript.
+                    I am looking to secure a challenging position where I can effectively contribute my skills as a software professional for growth of organization and myslef  
+                </p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Machine Learning Programs</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2023:</span><br>Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded </li>
+                        <li><span>2018-2021:</span><br>Government Polytechnic Pune </li>
+                        <li><span>2017-2018:</span><br>Gurudev Vidya Mandir, Mukhed</li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container2">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="work1">
+                        <img src="My project 1.jpeg">
+                    </div>
+                    <div class="layer">
+                        <h3></h3>
+                        <p>In this Project We designed and developed the piston pump fertilizer a proven the time of spraying is faster and it is more efficient compared to other normal type hand sprayer </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="My project 2.png">
+                    <div class="layer">
+                        <h3>Data Pre-processing Web App</h3>
+                        <p> In this project we have made an data Pre-processing 
+                            app by using Machine learing
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="My project 3.png">
+                    <div class="layer">
+                        <h3>To-do App</h3>
+                        <p>This is a Basic CSS and HTMl and Java Script website. 
+                        In this we can add our daily what to do things and can cancel whenever we want.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> -->
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container3">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bx-envelope'></i>havarageumesh991@gmail.com</p>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <a href="My Resume.pdf" download class="btn-2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Made By Umesh &copy 2023</p>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
